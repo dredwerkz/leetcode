@@ -1,0 +1,17 @@
+Task:
+
+Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
+
+Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
+
+Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
+Return k.
+
+
+Learnings:
+
+With JS I should look for more opportunities to double up on variable functionality - using k to both iterate through relevant bits of an array and keep a track of the value we want to return is a great example of this.
+
+In Python I need to dive deeper into tools like list comprehension - very good and fast solution to this problem!
+
+C++ I should look into standard library functions more and seek to understand how they interact better!

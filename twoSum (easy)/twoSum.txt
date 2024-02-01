@@ -1,0 +1,16 @@
+Task: 
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+
+Learnings:
+
+Using a hash table containing the index and number is way way way more efficient than iterating through every combination of integers.
+
+It looks like from my research that using maps is probably the most efficient catch-all way to solve this problem across all 3 languages I've tried!
+
+Definitely need to look more into the application of maps as they're probably pretty useful in general :)

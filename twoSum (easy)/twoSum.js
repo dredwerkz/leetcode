@@ -1,19 +1,16 @@
-/* First attempt - solve the problem
-i and j iterators that spin through indices, add the numbers together and check for a match.
+function twoSum(nums, target) {
 
-Very quick and easy solution - unfortunately when you get a big dataset it fails due to time restraints.
-*/
-
-/* Second attempt - refine
-used const hash = new Map() to create a map.
-Comparing target - n to find a complement within the map.
-
-Good solution, passes all tests, but could be better.
-*/
-
-/* Final attempt - solve
-
-As above, creating a hash table, except instead of using a Map object we create a raw object and construct it manually.
-Much faster but is less type safe.
-
-*/
+    const hashTable = {} // Creating a hash table manually rather than a Map()
+    
+    for (let i = 0; i<nums.length; i++) { // Iterating
+     const currentNumber = nums[i]; // Storing the current number inside the array
+     
+     if (hashTable[target - currentNumber] !== undefined) { // If the difference between currentNumber and the target has been found previously in the loop...
+        return [hashTable[target - currentNumber], i]; // Return the indices from hashTable
+     }
+     
+     hashTable[currentNumber] = i // Store the currentNumber as a key with the index as the number
+    
+    }
+    
+    }

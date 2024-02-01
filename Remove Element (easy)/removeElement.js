@@ -1,13 +1,5 @@
-
-
 /** First Solution: */
 // My other idea was to build an object containing all values and their indices and slice them all in one go.
-
-/**
- * @param {number[]} nums
- * @param {number} val
- * @return {number}
- */
 
 var removeElement = function (nums, val) {
     while (nums.indexOf(val) > -1) {
